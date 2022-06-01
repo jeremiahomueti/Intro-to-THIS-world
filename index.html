@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const car = {
+            model: 'Corolla',
+            brand: 'Toyota',
+            drive: function() {
+                console.log(this);  //This (no pun intended), returns, when run, the car object. Runto see! Meanwhile, if we run only the console.log(this), without any context, it prints the windows object.
+            }
+        }
+
+        car.drive();
+    </script>
+</body>
+</html>
